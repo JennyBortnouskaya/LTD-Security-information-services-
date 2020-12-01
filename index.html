@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/carousel_style.css">
+    <script src="js/js-2.2.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<593adae1-7cb4-48c0-87c5-988f05b19aec>&lang=ru_RU"></script>
+    <title>Информационные услуги в области безопасности</title>
+</head>
+<body>
+<div class="container__header">
+    <div class="carousel ism-slider">
+        <div class="carousel__frame">
+            <ol class="carousel__slides">
+                <li class="carousel__slide slide__0">
+                    <div class="picture">
+                        <img src="images/Rectangle 126.png" class="picture__rectangle">
+                        <img src="images/Vector.png" class="picture__vector">
+                        <img src="images/caurousel_backgroung.png" class="picture__background">
+                        <button class=" ism-caption-3 carousel__phone">
+                            <img src="images/phone.png">
+                            +375 (17) 215-61-15
+                        </button>
+                        <button class=" ism-caption-3 carousel__menu">
+                            <div class='menu'>
+                                <input type='checkbox' class='responsive-menu'><label></label>
+                                <ul>
+                                    <li><a class='dropdown-arrow'>
+                                        <img src="images/menu.png">
+                                    </a>
+                                        <ul class='sub-menus'>
+                                            <li><a>Products</a></li>
+                                            <li><a>Products</a></li>
+                                            <li><a>Products</a></li>
+                                            <li><a>Products</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="caption ism-caption-0 caption__0 caption__animation ">Информационные услуги в области
+                        безопасности
+                    </div>
+                    <div class="caption ism-caption-1 caption__1 caption__animation ">Проверка деловой репутации
+                        компании
+                    </div>
+                    <button class=" ism-caption-2 carousel__details">Подробнее</button>
+                </li>
+                <li class="carousel__slide slide__1">
+                    <div class="picture">
+                        <img src="images/Rectangle 126.png" class="picture__rectangle">
+                        <img src="images/Vector.png" class="picture__vector">
+                        <img src="images/caurousel_backgroung.png"
+                             class="picture__background">
+                        <button class=" ism-caption-3 carousel__phone">
+                            <img src="images/phone.png">
+                            +375 (17) 215-61-15
+                        </button>
+                        <button class=" ism-caption-3 carousel__menu">
+                            <div class='menu'>
+                                <input type='checkbox' class='responsive-menu' onclick='updatemenu()'><label></label>
+                                <ul>
+                                    <li><a class='dropdown-arrow'>
+                                        <img src="images/menu.png">
+                                    </a>
+                                        <ul class='sub-menus'>
+                                            <li><a>Products</a></li>
+                                            <li><a>Products</a></li>
+                                            <li><a>Products</a></li>
+                                            <li><a>Products</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="caption caption__0 caption__animation" style="visibility: visible;">Информационные
+                        услуги в области безопасности
+                    </div>
+                    <div class="caption ism-caption-1 caption__1 caption__animation" style="visibility: visible;"> Проверка деловой репутации                        компании
+                    </div>
+                    <button class=" ism-caption-2 carousel__details">Подробнее</button>
+                </li>
+            </ol>
+            <div class="carousel__button ism-button-prev"></div>
+            <div class="carousel__button ism-button-next">&nbsp;</div>
+        </div>
+    </div>
+    <div class="main container">
+        <div class="carousel">
+
+        </div>
+        <div class="infomation">
+            <div class="about_us">
+                <div class="about_us__image"></div>
+                <div class="about_us__text">
+                    <h1 class="info__title">О нас</h1>
+                    <p class="info__subtitle"><strong>ООО «Сервис» создано в 2019 году</strong> для повышения
+                        операционной
+                        эффективности клиентов
+                        за счет приема на аутсорсинг обеспечивающих и вспомогательных бизнес-процессов (их отдельных
+                        этапов),
+                        что позволяет клиентам сфокусироваться на основных видах деятельности и с помощью структурной
+                        реорганизации оптимизировать расходы.
+                    </p>
+                    <p class="info__subtitle">Участниками организации являются дочернее предприятие ОАО «Банк» - УСП «ЭБ
+                        Страхование» совместно с ООО «БДО Ашуренс» членом — международного объединения независимых
+                        аудиторских и
+                        консалтинговых компаний BDO International Limited.
+                    </p>
+                    <p class="info__subtitle"><strong>160</strong> сотрудников компании </p>
+                </div>
+
+            </div>
+            <div class="services">
+                <h2>Наши услуги</h2>
+                <div class="services__blocks">
+                    <div class="services__isecurity">
+
+                        <p>Информационные услуги в области безопасности</p>
+                        <img src="images/Rectangle 140.png">
+
+                    </div>
+                    <div class="services__isecurity services__security">
+                        <div class="content content__security">
+                            <p>Услуги по обеспечению безопасности</p>
+                            <img src="images/Vector_white.png">
+                        </div>
+                        <img src="images/Rectangle 141.png">
+
+                    </div>
+                    <div class="services__isecurity services__relationship">
+                        <img src="images/Rectangle 142.png">
+                        <div class="content content__relationships">
+                            <p>Услуги в области трудовых отношений</p>
+                            <img src="images/Vector_white.png">
+                        </div>
+
+                    </div>
+                    <div class="services__isecurity services__bureaucracy">
+                        <img src="images/Rectangle 143.png">
+                        <p>Услуги в области бухгалтерского, налогового учета и отчетности</p>
+
+
+                    </div>
+                    <div class="services__isecurity services__marketing">
+                        <p>Услуги в области маркетинга</p>
+                        <img src="images/Rectangle 144.png">
+
+                    </div>
+                    <div class="services__isecurity services__quality">
+                        <img src="images/Rectangle 145.png">
+                        <p>Услуги по внедрению системы менеджмента качества</p>
+
+
+                    </div>
+                    <div class="services__isecurity services__all">
+                        <img src="images/Rectangle 146.png">
+                        <div class="content content__all">
+                            <p>Название услугии</p>
+                            <img src="images/Vector_white.png">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="advantages">
+                <h2>Преимущества аутсорсинга</h2>
+                <div class="advantages__blocks">
+                    <div class=" advantages__quality">
+                        <img src="images/dimond.png">
+                        <p>Вы получаете <strong> услуги высокого качества</strong> в короткий срок</p>
+                        <button class="button__details js-show-form" name="hidden__quality"></button>
+                        <p class="js-form hidden" id="hidden__quality"> Скрытый контент</p>
+                    </div>
+                    <div class="advantages__quality advantages__optimisation">
+                        <img src="images/money.png">
+                        <p><strong>Оптимизирует финансовые затраты</strong> предприятия</p>
+                        <button class="button__details js-show-form" name="hidden__optimisation"></button>
+                        <p class="js-form hidden" id="hidden__optimisation"> Скрытый контент</p>
+                    </div>
+                    <div class="advantages__quality advantages__responsibilities">
+                        <img src="images/doc.png">
+                        <p><strong>Избавляет от обязательств</strong> по трудовому законодательству</p>
+                        <button class="button__details js-show-form" name="hidden__responsibilities"></button>
+                        <p class="js-form hidden" id="hidden__responsibilities"> Скрытый контент</p>
+                    </div>
+                    <div class=" advantages__quality advantages__concentration">
+                        <img src="images/target.png">
+                        <p><strong>Дает возможность сосредоточиться</strong> на основных бизнес-процессах</p>
+                        <button class="button__details js-show-form" name="hidden__concentration"></button>
+                        <p class="js-form hidden" id="hidden__concentration"> Скрытый контент</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact_information">
+            <div class="contacts">
+                <h3>Контакты</h3>
+                <p><strong>Телефон: </strong> +375 26 909-00-00 </p>
+                <p><strong>Емейл: </strong> example@gmail.com</p>
+                <p><strong>Адрес: </strong> 279987 г. Минск, ул. Октябрьская, 65, оф. 678</p>
+            </div>
+            <div class="feedback">
+                <h4>Хотите получить консультацию?</h4>
+                <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Имя" name="name" id='name' required/>
+                    <label for="name" class="form__label">Имя</label>
+                </div>
+                <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Телефон" name="phone" id='phone' required/>
+                    <label for="phone" class="form__label">Телефон</label>
+                </div>
+                <p> Ваше сообщение (необязательно)</p>
+                <label for="textarea" class="textarea__label">
+                    <textarea name="Ваше сообщение (необязательно)" class="textarea" id='textarea' rows="10"
+                              cols="30"></textarea>
+                </label>
+                <a class="button__call">Перезвоните мне</a>
+            </div>
+            <img src="images/Vector(1).png">
+        </div>
+        <div id="map">
+            <script src="js/icon_customImage.js" type="text/javascript"></script>
+        </div>
+        <div class="footer">
+            <div class="navigation">
+                <div class="navigation__list">
+                    <h5> Услуги</h5>
+                    <div class="navigation__block">
+                        <a>Информационные услуги в области безопасности</a>
+                        <a>Услуги по обеспечению безопасности</a>
+                        <a>Услуги в области трудовых отношений</a>
+                        <a>Услуги в области бухгалтерского, налогового учета и отчетности</a>
+                        <a>Услуги в области маркетинга</a>
+                        <a>Услуги по внедрению системы менеджмента качества </a>
+                        <a>Название услуги</a>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="social__media">
+                        <a class="icon facebook">
+                            <img src="images/Group 1076.png">
+                        </a>
+                        <a class="icon vk">
+                            <img src="images/Group 1077.png">
+                        </a>
+                        <a class="icon twitter">
+                            <img src="images/Group 1078.png">
+                        </a>
+                        <a class="icon instagram">
+                            <img src="images/Group 1079.png">
+                        </a>
+                        <a class="icon youtube">
+                            <img src="images/Group 1080.png">
+                        </a>
+
+                    </div>
+                    <a href="#" class="arrow">
+                        <button class="up__button">
+                            <img src="images/Arrow 5.png">
+                            Наверх
+
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
