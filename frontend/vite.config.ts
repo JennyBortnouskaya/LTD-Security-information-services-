@@ -13,10 +13,11 @@ export default defineConfig({
     viteImagemin({
       gifsicle: { optimizationLevel: 7 },
       optipng: { optimizationLevel: 7 },
-      mozjpeg: { quality: 70 },
+      mozjpeg: { quality: 60 },
       pngquant: {
-        quality: [0.65, 0.8],
+        quality: [0.55, 0.7],
         speed: 4,
+        floyd: 0.5,
       },
       svgo: {
         plugins: [
@@ -27,10 +28,10 @@ export default defineConfig({
     }),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['**/*.{png,jpg,jpeg,svg,woff,woff2}'],
+      includeAssets: ['**/*.{png,jpg,jpeg,svg,webp,woff,woff2}'],
       manifest: false,
       workbox: {
-        globPatterns: ['**/*.{js,css,html,png,jpg,jpeg,svg,woff,woff2}'],
+        globPatterns: ['**/*.{js,css,html,png,jpg,jpeg,svg,webp,woff,woff2}'],
         runtimeCaching: [
           {
             urlPattern: /^https?.*\.(?:png|jpg|jpeg|svg|webp)$/i,

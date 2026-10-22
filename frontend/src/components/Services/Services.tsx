@@ -10,7 +10,7 @@ const Services = () => {
       <div className="services__blocks flex flex-wrap justify-center w-full my-0 mb-[100px]">
         <ServiceCard
           title="Информационные услуги в области безопасности"
-          image={publicAsset('images/Rectangle 140.png')}
+          image={publicAsset('images/Rectangle 140.jpg')}
           className="services__isecurity"
         />
         <ServiceCard
