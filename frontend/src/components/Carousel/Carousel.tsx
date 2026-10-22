@@ -16,11 +16,11 @@ const Carousel = () => {
         <ol className={`carousel__slides ${activeSlide === 0 ? 'slide-0' : 'slide-1'}`}>
           <li className="carousel__slide slide__0">
             <div className="picture">
-              <img src={publicAsset('images/Rectangle 126.png')} className="picture__rectangle" alt="" />
-              <img src={publicAsset('images/Vector.png')} className="picture__vector" alt="" />
-              <img src={publicAsset('images/caurousel_backgroung.png')} className="picture__background" alt="" />
+              <img src={publicAsset('images/Rectangle 126.png')} className="picture__rectangle" alt="" loading="lazy" />
+              <img src={publicAsset('images/Vector.png')} className="picture__vector" alt="" loading="lazy" />
+              <img src={publicAsset('images/caurousel_backgroung.png')} className="picture__background" alt="" loading="eager" />
               <button className="ism-caption-3 carousel__phone">
-                <img src={publicAsset('images/phone.png')} alt="" />
+                <img src={publicAsset('images/phone.png')} alt="" loading="lazy" />
                 +375 (17) 215-61-15
               </button>
               <div className="menu">
@@ -31,7 +31,7 @@ const Carousel = () => {
                   aria-expanded={isMenuOpen}
                   onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
                 >
-                  <img src={publicAsset('images/menu.png')} alt="" />
+                  <img src={publicAsset('images/menu.png')} alt="" loading="lazy" />
                 </button>
                 {isMenuOpen && (
                   <ul className="sub-menus">
@@ -53,11 +53,11 @@ const Carousel = () => {
           </li>
           <li className="carousel__slide slide__1">
             <div className="picture">
-              <img src={publicAsset('images/Rectangle 126.png')} className="picture__rectangle" alt="" />
-              <img src={publicAsset('images/Vector.png')} className="picture__vector" alt="" />
-              <img src={publicAsset('images/caurousel_backgroung.png')} className="picture__background" alt="" />
+              <img src={publicAsset('images/Rectangle 126.png')} className="picture__rectangle" alt="" loading="lazy" />
+              <img src={publicAsset('images/Vector.png')} className="picture__vector" alt="" loading="lazy" />
+              <img src={publicAsset('images/caurousel_backgroung.png')} className="picture__background" alt="" loading="lazy" />
               <button className="ism-caption-3 carousel__phone">
-                <img src={publicAsset('images/phone.png')} alt="" />
+                <img src={publicAsset('images/phone.png')} alt="" loading="lazy" />
                 +375 (17) 215-61-15
               </button>
               <div className="menu">
@@ -68,7 +68,7 @@ const Carousel = () => {
                   aria-expanded={isMenuOpen}
                   onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
                 >
-                  <img src={publicAsset('images/menu.png')} alt="" />
+                  <img src={publicAsset('images/menu.png')} alt="" loading="lazy" />
                 </button>
                 {isMenuOpen && (
                   <ul className="sub-menus">
