@@ -18,8 +18,9 @@
   background-clip: padding-box;
   width: 100%;
   border-radius: 0;
-  height: 1558px;
+  height: 100vh;
   min-height: 560px;
+  max-height: 900px;
 }
 
 .carousel__frame {

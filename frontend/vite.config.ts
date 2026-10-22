@@ -7,4 +7,14 @@ export default defineConfig({
     ? `/${process.env.GITHUB_REPOSITORY?.split('/')[1] ?? ''}/`
     : '/',
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom'],
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000,
+  },
 })
