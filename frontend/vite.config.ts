@@ -17,7 +17,6 @@ export default defineConfig({
       pngquant: {
         quality: [0.55, 0.7],
         speed: 4,
-        floyd: 0.5,
       },
       svgo: {
         plugins: [
