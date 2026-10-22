@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './carousel.css';
+import { publicAsset } from '../../utils/publicAsset';
 
 const Carousel = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -15,11 +16,11 @@ const Carousel = () => {
         <ol className={`carousel__slides ${activeSlide === 0 ? 'slide-0' : 'slide-1'}`}>
           <li className="carousel__slide slide__0">
             <div className="picture">
-              <img src="/images/Rectangle 126.png" className="picture__rectangle" alt="" />
-              <img src="/images/Vector.png" className="picture__vector" alt="" />
-              <img src="/images/caurousel_backgroung.png" className="picture__background" alt="" />
+              <img src={publicAsset('images/Rectangle 126.png')} className="picture__rectangle" alt="" />
+              <img src={publicAsset('images/Vector.png')} className="picture__vector" alt="" />
+              <img src={publicAsset('images/caurousel_backgroung.png')} className="picture__background" alt="" />
               <button className="ism-caption-3 carousel__phone">
-                <img src="/images/phone.png" alt="" />
+                <img src={publicAsset('images/phone.png')} alt="" />
                 +375 (17) 215-61-15
               </button>
               <div className="menu">
@@ -30,7 +31,7 @@ const Carousel = () => {
                   aria-expanded={isMenuOpen}
                   onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
                 >
-                  <img src="/images/menu.png" alt="" />
+                  <img src={publicAsset('images/menu.png')} alt="" />
                 </button>
                 {isMenuOpen && (
                   <ul className="sub-menus">
@@ -52,11 +53,11 @@ const Carousel = () => {
           </li>
           <li className="carousel__slide slide__1">
             <div className="picture">
-              <img src="/images/Rectangle 126.png" className="picture__rectangle" alt="" />
-              <img src="/images/Vector.png" className="picture__vector" alt="" />
-              <img src="/images/caurousel_backgroung.png" className="picture__background" alt="" />
+              <img src={publicAsset('images/Rectangle 126.png')} className="picture__rectangle" alt="" />
+              <img src={publicAsset('images/Vector.png')} className="picture__vector" alt="" />
+              <img src={publicAsset('images/caurousel_backgroung.png')} className="picture__background" alt="" />
               <button className="ism-caption-3 carousel__phone">
-                <img src="/images/phone.png" alt="" />
+                <img src={publicAsset('images/phone.png')} alt="" />
                 +375 (17) 215-61-15
               </button>
               <div className="menu">
@@ -67,7 +68,7 @@ const Carousel = () => {
                   aria-expanded={isMenuOpen}
                   onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
                 >
-                  <img src="/images/menu.png" alt="" />
+                  <img src={publicAsset('images/menu.png')} alt="" />
                 </button>
                 {isMenuOpen && (
                   <ul className="sub-menus">

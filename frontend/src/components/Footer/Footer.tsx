@@ -1,5 +1,6 @@
 import './footer.css';
 import SocialMedia from './SocialMedia';
+import { publicAsset } from '../../utils/publicAsset';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -25,7 +26,7 @@ const Footer = () => {
           <SocialMedia />
           <a href="#" className="arrow" onClick={(e) => { e.preventDefault(); scrollToTop(); }}>
             <button className="up__button">
-              <img src="/images/Arrow 5.png" alt="" />
+              <img src={publicAsset('images/Arrow 5.png')} alt="" />
               Наверх
             </button>
           </a>

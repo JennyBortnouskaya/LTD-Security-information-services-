@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { publicAsset } from '../../utils/publicAsset';
 
 const Map = () => {
   const mapRef = useRef<HTMLDivElement>(null);
@@ -36,7 +37,7 @@ const Map = () => {
             },
             {
               iconLayout: 'default#image',
-              iconImageHref: '/images/pointer.png',
+              iconImageHref: publicAsset('images/pointer.png'),
               iconImageSize: [40, 55],
               iconImageOffset: [0, -27]
             }
