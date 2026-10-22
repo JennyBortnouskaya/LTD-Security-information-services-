@@ -18,7 +18,7 @@ const Carousel = () => {
             <div className="picture">
               <img src={publicAsset('images/Rectangle 126.png')} className="picture__rectangle" alt="" loading="lazy" />
               <img src={publicAsset('images/Vector.png')} className="picture__vector" alt="" loading="lazy" />
-              <img src={publicAsset('images/caurousel_backgroung.png')} className="picture__background" alt="" loading="eager" />
+              <img src={publicAsset('images/caurousel_backgroung.jpg')} className="picture__background" alt="" loading="eager" />
               <button className="ism-caption-3 carousel__phone">
                 <img src={publicAsset('images/phone.png')} alt="" loading="lazy" />
                 +375 (17) 215-61-15
@@ -55,7 +55,7 @@ const Carousel = () => {
             <div className="picture">
               <img src={publicAsset('images/Rectangle 126.png')} className="picture__rectangle" alt="" loading="lazy" />
               <img src={publicAsset('images/Vector.png')} className="picture__vector" alt="" loading="lazy" />
-              <img src={publicAsset('images/caurousel_backgroung.png')} className="picture__background" alt="" loading="lazy" />
+              <img src={publicAsset('images/caurousel_backgroung.jpg')} className="picture__background" alt="" loading="lazy" />
               <button className="ism-caption-3 carousel__phone">
                 <img src={publicAsset('images/phone.png')} alt="" loading="lazy" />
                 +375 (17) 215-61-15
