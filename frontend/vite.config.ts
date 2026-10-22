@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import viteImagemin from 'vite-plugin-imagemin'
+import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -12,12 +13,39 @@ export default defineConfig({
     viteImagemin({
       gifsicle: { optimizationLevel: 7 },
       optipng: { optimizationLevel: 7 },
-      mozjpeg: { quality: 80 },
-      pngquant: { quality: [0.8, 0.9] },
+      mozjpeg: { quality: 70 },
+      pngquant: {
+        quality: [0.65, 0.8],
+        speed: 4,
+      },
       svgo: {
         plugins: [
           { name: 'removeViewBox' },
           { name: 'removeEmptyAttrs' },
+        ],
+      },
+    }),
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['**/*.{png,jpg,jpeg,svg,woff,woff2}'],
+      manifest: false,
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,png,jpg,jpeg,svg,woff,woff2}'],
+        runtimeCaching: [
+          {
+            urlPattern: /^https?.*\.(?:png|jpg|jpeg|svg|webp)$/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'image-cache',
+              expiration: {
+                maxEntries: 100,
+                maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
         ],
       },
     }),
@@ -31,5 +59,6 @@ export default defineConfig({
       },
     },
     chunkSizeWarningLimit: 1000,
+    assetsInlineLimit: 4096,
   },
 })
