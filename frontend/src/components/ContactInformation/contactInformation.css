@@ -1,0 +1,163 @@
+.contact_information {
+  width: 100%;
+  height: 578px;
+  background: url("../../../public/images/Rectangle 157.png");
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contacts {
+  width: 731px;
+  height: 418px;
+  background: #FFFFFF;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  font-size: 26px;
+  line-height: 47px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacts h3 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 62px;
+  padding: 0 60px;
+}
+
+.contacts p {
+  padding: 0 60px;
+}
+
+.feedback {
+  width: 731px;
+  height: 418px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: inherit;
+}
+
+.feedback h4 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.feedback p {
+  color: #9fa3ad;
+  font-size: 23px;
+  margin: 20px 0 0 0;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 610px;
+  border: 0;
+  border-bottom: 2px solid #ffffff;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 28px;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image-slice: 1;
+}
+
+.form__field:focus {
+  border-image: linear-gradient(to right, #9184e6, #dfdbf9);
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9184e6;
+  font-weight: 700;
+}
+
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+
+textarea {
+  background: transparent;
+  height: 92px;
+  outline: transparent;
+  color: #ffffff;
+  resize: none;
+  border: 1px solid #fff;
+  width: 610px;
+  border-radius: 10px;
+}
+
+textarea:focus {
+  outline: 1px solid #9184e6;
+}
+
+.button__call {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+  text-decoration: none;
+  height: 68px;
+  width: 247px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px 0 0 0;
+  font-size: 28px;
+}
+
+.button__call:hover {
+  cursor: pointer;
+  background: #dfdbf9;
+}
+
+.contact_information img {
+  width: 416px;
+  height: 471px;
+  position: absolute;
+  left: 79%;
+}

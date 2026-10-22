@@ -1,0 +1,168 @@
+.footer {
+  width: 100%;
+  height: 550px;
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 44px;
+  background: linear-gradient(180deg, #49484C 0%, rgba(127, 125, 131, 0) 100%), #49484C;
+  overflow: hidden;
+}
+
+.navigation h5 {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.navigation {
+  position: relative;
+  display: flex;
+  width: calc(100% - clamp(64px, 17.75vw, 672px));
+  height: 120%;
+  margin: 0 auto;
+  padding-top: 82px;
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.navigation__block {
+  display: grid;
+  grid-template-columns: clamp(513px, 31.3vw, 1184px) minmax(0, 1fr);
+  grid-template-rows: repeat(4, min-content);
+  grid-auto-flow: column;
+  row-gap: 32px;
+  margin-top: 63px;
+}
+
+.navigation__block a {
+  cursor: pointer;
+}
+
+.navigation__block a:hover {
+  color: #b7b5b5;
+  cursor: pointer;
+}
+
+.social__media {
+  display: flex;
+  gap: 11px;
+  margin: 0;
+}
+
+.social__media a {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  place-items: center;
+  background: #626161;
+  cursor: pointer;
+}
+
+.icon img {
+  padding: 0;
+  transform: scale(1.4);
+}
+
+.icon:hover {
+  background: #b7b5b5;
+  cursor: pointer;
+}
+
+.facebook img {
+  padding: 0;
+}
+
+.instagram img {
+  padding: 0;
+}
+
+.up__button {
+  display: flex;
+  width: 115px;
+  height: 115px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1.175px solid #FFFFFF;
+  background: #626161;
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.up__button img {
+  transform: scale(1.4);
+}
+
+.up__button:hover {
+  background: #b7b5b5;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 97px;
+  height: 97px;
+  text-decoration: none;
+}
+
+.arrow:visited {
+  color: inherit;
+}
+
+.buttons {
+  position: absolute;
+  right: 0;
+  bottom: 120px;
+}
+
+.buttons .social__media {
+  position: absolute;
+  right: 230px;
+  bottom: 90px;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    height: auto;
+    min-height: 748px;
+  }
+
+  .navigation {
+    width: auto;
+    height: auto;
+    min-height: 735px;
+    margin: 36px 32px 0;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    min-height: 0;
+    margin: 32px 20px 0;
+    padding-bottom: 32px;
+  }
+
+  .navigation__block {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-flow: row;
+  }
+
+  .buttons,
+  .buttons .social__media {
+    position: static;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    margin-top: 32px;
+  }
+}

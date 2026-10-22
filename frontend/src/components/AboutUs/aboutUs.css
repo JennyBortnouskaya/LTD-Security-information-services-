@@ -1,0 +1,36 @@
+.infomation {
+  margin: 100px;
+}
+
+.about_us {
+  display: flex;
+  justify-content: center;
+}
+
+.about_us__image {
+  background-image: url("../../../public/images/about_us.png");
+  width: 671px;
+  height: 522px;
+}
+
+.about_us__text {
+  width: 805px;
+  height: 700px;
+}
+
+.info__title {
+  font-size: 77px;
+  line-height: 62px;
+  color: #212529;
+  margin: 0 0 50px;
+}
+
+.info__subtitle {
+  font-size: 29px;
+  line-height: 28px;
+  color: #434040;
+}
+
+.about_us__text.w-\[805px\].h-\[700px\] > p:nth-child(4) {
+  margin: 50px 0 0;
+}

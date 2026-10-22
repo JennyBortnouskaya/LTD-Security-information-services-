@@ -1,0 +1,51 @@
+.advantages__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 28px;
+  line-height: 36px;
+  justify-content: center;
+  margin: 0 0 100px 0;
+}
+
+.advantages h2 {
+  font-size: 48px;
+  line-height: 118px;
+  color: #212529;
+  text-align: center;
+}
+
+.advantages__quality {
+  width: 775px;
+  height: 181px;
+  box-shadow: 0 0 20px rgba(206, 206, 206, 0.7);
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.advantages__quality img {
+  height: 80px;
+}
+
+.advantages__quality p {
+  width: 521px;
+}
+
+.button__details {
+  background: url("../../../public/images/button.png");
+  width: 42px;
+  height: 42px;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.js-form {
+  position: absolute;
+  margin: 65px 0 0 15px;
+}

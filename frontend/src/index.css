@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('../public/fonts/FuturaPT-Medium.woff2') format('woff2'),
+       url('../public/fonts/FuturaPT-Medium.woff') format('woff'),
+       url('../public/fonts/FuturaPT-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('../public/fonts/FuturaPT-Bold.woff2') format('woff2'),
+       url('../public/fonts/FuturaPT-Bold.woff') format('woff'),
+       url('../public/fonts/FuturaPT-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('../public/fonts/FuturaPT-Book.woff2') format('woff2'),
+       url('../public/fonts/FuturaPT-Book.woff') format('woff'),
+       url('../public/fonts/FuturaPT-Book.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@layer base {
+  :root {
+    /* Colors */
+    --color-text-primary: #434040;
+    --color-text-dark: #212529;
+    --color-white: #FFFFFF;
+    --color-primary: #27214A;
+    --color-primary-light: #695ea5;
+    --color-primary-hover: #504688;
+    --color-accent: #9184e6;
+    --color-accent-light: #dfdbf9;
+    --color-footer: #49484C;
+    --color-footer-dark: #626161;
+    --color-footer-hover: #b7b5b5;
+    --color-placeholder: #9fa3ad;
+    --color-label: #9b9b9b;
+
+    /* Font sizes */
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 28px;
+    --font-size-3xl: 48px;
+    --font-size-4xl: 52px;
+
+    /* Line heights */
+    --line-height-sm: 21px;
+    --line-height-base: 23px;
+    --line-height-lg: 28px;
+    --line-height-xl: 31px;
+    --line-height-2xl: 36px;
+    --line-height-3xl: 62px;
+
+    /* Spacing */
+    --spacing-sm: 10px;
+    --spacing-md: 100px;
+    --spacing-lg: 134px;
+
+    /* Border radius */
+    --radius-sm: 10px;
+
+    /* Transitions */
+    --transition-fast: 0.2s;
+    --transition-base: 0.5s;
+
+    /* Shadows */
+    --shadow-sm: 0 0 10px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 0 12px rgba(255, 255, 255, 0.25);
+    --shadow-lg: 0 0 20px rgba(206, 206, 206, 0.7);
+    --shadow-xl: 0 0 15px rgba(72, 72, 76, 0.25);
+    --shadow-2xl: 0 4px 4px rgba(72, 72, 76, 0.25);
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(180deg, #27214A 0%, rgba(118, 110, 162, 0) 100%), #27214A;
+    --gradient-primary-hover: linear-gradient(180deg, #695ea5 0%, rgba(118, 110, 162, 0) 100%), #504688;
+    --gradient-border: linear-gradient(to right, #9184e6, #dfdbf9);
+    --gradient-footer: linear-gradient(180deg, #49484C 0%, rgba(127, 125, 131, 0) 100%), #49484C;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: var(--color-white);
+    font-family: 'Futura PT', serif;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--color-text-primary);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+  }
+
+  /* Fallback for gap in flexbox */
+  @supports not (gap: 10px) {
+    .flex-gap-fallback > * + * {
+      margin-left: 10px;
+    }
+  }
+
+  /* Fallback for CSS custom properties */
+  @supports not (--custom: property) {
+    body {
+      color: #434040;
+    }
+  }
+
+  /* Fallback for gradients */
+  @supports not (background: linear-gradient(to right, red, blue)) {
+    .gradient-fallback {
+      background: #27214A;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .infomation { margin: 64px 32px; }
+  .about_us { align-items: center; flex-direction: column; gap: 32px; }
+  .about_us__image, .about_us__text { width: min(100%, 671px); height: auto; }
+  .about_us__image { aspect-ratio: 671 / 522; background-size: cover; background-position: center; }
+  .services h2 { margin-left: 0; }
+  .services__isecurity, .services__relationship, .services__bureaucracy { width: min(100%, 775px); }
+  .services__isecurity:hover, .services__relationship:hover, .services__bureaucracy:hover { width: min(100%, 775px); }
+  .advantages__quality { width: min(100%, 775px); height: auto; min-height: 181px; padding: 24px; }
+  .contact_information { height: auto; min-height: 578px; padding: 48px 32px; gap: 32px; flex-wrap: wrap; }
+  .contacts, .feedback { width: min(100%, 731px); height: auto; min-height: 418px; }
+  .contact_information > img { display: none; }
+  .footer { height: auto; min-height: 386px; padding-bottom: 36px; }
+  .navigation { margin: 36px 32px 0; }
+  .social__media { margin: 0; }
+  .buttons { margin-right: 0; }
+}
+
+@media (max-width: 600px) {
+  .infomation { margin: 48px 20px; }
+  .info__title, .services h2, .advantages h2, .contacts h3 { font-size: 36px; line-height: 1.15; }
+  .services h2 { margin-bottom: 28px; }
+  .services__isecurity { min-height: 260px; height: auto; background-size: cover; }
+  .services__isecurity p { font-size: 22px; line-height: 1.25; margin-right: 10%; }
+  .content img { width: 220px; height: auto; }
+  .advantages__quality { align-items: flex-start; flex-wrap: wrap; gap: 16px; padding: 20px; }
+  .advantages__quality p { width: calc(100% - 96px); margin: 0; }
+  .js-form { position: static; width: 100%; margin: 0; }
+  .contact_information { padding: 40px 20px; }
+  .contacts { padding: 24px; font-size: 20px; line-height: 1.35; }
+  .contacts h3, .contacts p { padding: 0; }
+  .feedback { min-height: 0; }
+  .form__group, .form__field, textarea { width: 100%; }
+  .navigation { align-items: flex-start; flex-direction: column; gap: 28px; margin: 32px 20px 0; }
+  .navigation__block { height: auto; }
+  .navigation__block a { margin-right: 0; }
+  .buttons { align-items: flex-start; }
+}
+
+@layer utilities {
+  .text-gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .text-gradient-primary-hover {
+    background: var(--gradient-primary-hover);
+  }
+
+  .shadow-custom-sm {
+    box-shadow: var(--shadow-sm);
+  }
+
+  .shadow-custom-md {
+    box-shadow: var(--shadow-md);
+  }
+
+  .shadow-custom-lg {
+    box-shadow: var(--shadow-lg);
+  }
+
+  .shadow-custom-xl {
+    box-shadow: var(--shadow-xl);
+  }
+
+  .shadow-custom-2xl {
+    box-shadow: var(--shadow-2xl);
+  }
+}
